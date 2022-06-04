@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8713be4e60.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Les petits plats</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/img/logo.svg" alt="" id="logo">
+        <div class="search_container">
+            <input type="text" placeholder="Rechercher une recette" class="search-bar" aria-label="rechercher une recette"/>
+            <div class="search-bar_btn">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="filters-container">
+            <div class="selected-container">
+                <div class="ingredient-selected">
+                    <p>coco</p>
+                    <img src="/assets/img/delete.svg" alt="">
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="filters-btn filter1 is-active">
+                    <div class="input-container">
+                        <input type="text" placeholder="Ingredients" class="filters-bar filter1" aria-label="filtre d'ingrédients"/>
+                        <i class="fas fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="list-container">
+                        <ul>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                        </ul>
+                        <ul>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                        </ul>
+                        <ul>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                            <li>coco</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filters-btn filter2">
+                    <div class="input-container">
+                        <input type="text" placeholder="Ustenciles" class="filters-bar filter2" aria-label="filtre d'ustenciles"/>
+                        <i class="fas fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="filters-btn filter3">
+                    <div class="input-container">
+                        <input type="text" placeholder="Appareils" class="filters-bar filter3" aria-label="filtre d'appareils"/>
+                        <i class="fas fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container" id="card-container">
+            <!-- <div class="card">
+                <img src="https://picsum.photos/200" alt="" class="card-img">
+                <div class="card-details">
+                    <div class="card-details-title-time">
+                        <div class="card-title">
+                            <h3>Limonade coco</h3>
+                        </div>
+                        <div class="card-timer">
+                            <img src="/assets/img/clock.svg" alt="">
+                            <div class="card-timer-numbers">10</div>
+                            <p>min</p>
+                        </div>
+                    </div>
+                    <div class="card-details-cooking">
+                        <div class="card-ingredients">
+                            <div class="ingredient">
+                                <p class="type-ingredient">lait de coco</p>
+                                <p class="ingredient-quantity">: 400</p>
+                                <p class="quantity-unit">ml</p>
+                            </div>
+                        </div>
+                        <div class="card-instruction">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis incidunt illo ea quae architecto inventore! Delectus fuga nobis odio quos mollitia, eaque ipsam. Repellendus quos eligendi sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="" class="card-img">
+                <div class="card-details">
+                    <div class="card-details-title-time">
+                        <div class="card-title">
+                            <h3>Limonade coco</h3>
+                        </div>
+                        <div class="card-timer">
+                            <img src="/assets/img/clock.svg" alt="">
+                            <div class="card-timer-numbers">10</div>
+                            <p>min</p>
+                        </div>
+                    </div>
+                    <div class="card-details-cooking">
+                        <div class="card-ingredients">
+                            <div class="ingredient">
+                                <p class="type-ingredient">lait de coco</p>
+                                <p class="ingredient-quantity">: 400</p>
+                                <p class="quantity-unit">ml</p>
+                            </div>
+                        </div>
+                        <div class="card-instruction">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis incidunt illo ea quae architecto inventore! Delectus fuga nobis odio quos mollitia, eaque ipsam. Repellendus quos eligendi sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="" class="card-img">
+                <div class="card-details">
+                    <div class="card-details-title-time">
+                        <div class="card-title">
+                            <h3>Limonade coco</h3>
+                        </div>
+                        <div class="card-timer">
+                            <img src="/assets/img/clock.svg" alt="">
+                            <div class="card-timer-numbers">10</div>
+                            <p>min</p>
+                        </div>
+                    </div>
+                    <div class="card-details-cooking">
+                        <div class="card-ingredients">
+                            <div class="ingredient">
+                                <p class="type-ingredient">lait de coco</p>
+                                <p class="ingredient-quantity">: 400</p>
+                                <p class="quantity-unit">ml</p>
+                            </div>
+                        </div>
+                        <div class="card-instruction">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis incidunt illo ea quae architecto inventore! Delectus fuga nobis odio quos mollitia, eaque ipsam. Repellendus quos eligendi sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="" class="card-img">
+                <div class="card-details">
+                    <div class="card-details-title-time">
+                        <div class="card-title">
+                            <h3>Limonade coco</h3>
+                        </div>
+                        <div class="card-timer">
+                            <img src="/assets/img/clock.svg" alt="">
+                            <div class="card-timer-numbers">10</div>
+                            <p>min</p>
+                        </div>
+                    </div>
+                    <div class="card-details-cooking">
+                        <div class="card-ingredients">
+                            <div class="ingredient">
+                                <p class="type-ingredient">lait de coco</p>
+                                <p class="ingredient-quantity">: 400</p>
+                                <p class="quantity-unit">ml</p>
+                            </div>
+                        </div>
+                        <div class="card-instruction">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis incidunt illo ea quae architecto inventore! Delectus fuga nobis odio quos mollitia, eaque ipsam. Repellendus quos eligendi sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="" class="card-img">
+                <div class="card-details">
+                    <div class="card-details-title-time">
+                        <div class="card-title">
+                            <h3>Limonade coco</h3>
+                        </div>
+                        <div class="card-timer">
+                            <img src="/assets/img/clock.svg" alt="">
+                            <div class="card-timer-numbers">10</div>
+                            <p>min</p>
+                        </div>
+                    </div>
+                    <div class="card-details-cooking">
+                        <div class="card-ingredients">
+                            <div class="ingredient">
+                                <p class="type-ingredient">lait de coco</p>
+                                <p class="ingredient-quantity">: 400</p>
+                                <p class="quantity-unit">ml</p>
+                            </div>
+                        </div>
+                        <div class="card-instruction">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis incidunt illo ea quae architecto inventore! Delectus fuga nobis odio quos mollitia, eaque ipsam. Repellendus quos eligendi sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="" class="card-img">
+                <div class="card-details">
+                    <div class="card-details-title-time">
+                        <div class="card-title">
+                            <h3>Limonade coco</h3>
+                        </div>
+                        <div class="card-timer">
+                            <img src="/assets/img/clock.svg" alt="">
+                            <div class="card-timer-numbers">10</div>
+                            <p>min</p>
+                        </div>
+                    </div>
+                    <div class="card-details-cooking">
+                        <div class="card-ingredients">
+                            <div class="ingredient">
+                                <p class="type-ingredient">lait de coco</p>
+                                <p class="ingredient-quantity">: 400</p>
+                                <p class="quantity-unit">ml</p>
+                            </div>
+                        </div>
+                        <div class="card-instruction">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, vel? Exercitationem blanditiis incidunt illo ea quae architecto inventore! Delectus fuga nobis odio quos mollitia, eaque ipsam. Repellendus quos eligendi sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <script src="/scripts/store.js"></script>
+        <script src="/scripts/app.js"></script>
+        <script src="/scripts/factories.js"></script>
+        <!-- <script src="/scripts/helpers.js"></script> -->
+    </footer>
+</body>
+</html>

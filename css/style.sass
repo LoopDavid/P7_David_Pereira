@@ -1,0 +1,200 @@
+$ingredients: #3282F7
+$appareils: #68D9A4
+$ustenciles: #ED6454
+body
+    margin: 50px 100px
+    max-width: 1240px
+    font-family: 'Lato', DM-sans
+    body, h1, h2, h3, h4, p, *
+        margin: 0
+        font-family: DM-sans
+
+    textarea
+        font-weight: 400
+    header
+        display: flex
+        justify-content: center
+        flex-direction: column
+        #logo
+            margin: 0px auto 17px auto
+            width: 268px
+        .search_container
+            display: flex
+            input
+                outline: none
+                border: none
+                border-radius: 5px 0 0 5px
+                font-size: 22px
+                margin: 0
+            input::placeholder
+                font-size: 22px
+            .search-bar
+                padding: 24px
+                width: 100%
+                background-color: #E7E7E7
+
+            .search-bar_btn
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 24px
+                background-color: #E7E7E7
+                border-radius: 0 5px 5px 0
+                .fas
+                    font-size: 32px
+    main
+        .filters-container
+            display: flex
+            flex-direction: column
+            .ingredient-selected
+                margin: 15px 0 0 0
+                padding: 15px
+                display: flex
+                justify-content: space-around
+                background-color: $ingredients
+                width: 107px
+                color: white
+                font-size: 14px
+                border-radius: 5px
+                img
+                    color: white
+            .filter-container
+                display: grid
+                grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+                grid-gap: 20px
+                display: flex
+                align-content: center
+                margin: 20px 0
+            input
+                border: none
+                color: white
+            input::placeholder
+                color: white
+            i
+                color: white
+                padding: 10px
+                width: 16px
+            .filters-btn
+                display: flex
+                flex-direction: column
+                align-items: center
+                border-radius: 5px
+                height: 69px
+                margin-right: 20px
+                .input-container
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    input
+                        border-radius: 5px
+                        width: 100px
+                        padding: 0 0 0 10px
+                .list-container
+                    position: relative
+                    display: flex
+                    width: 100%
+                    height: auto
+            .filters-btn:hover i
+                transform: rotate(180deg)
+                animation-delay: 0.4s
+                transition-duration: 0.6s
+            .filters-container:nth-child(1n), .filter1
+                background: #3282F7
+            .filters-container:nth-child(2n), .filter2
+                background: #68D94A
+            .filters-container:nth-child(3n), .filter3
+                background: #ED6454
+            .filters-bar
+                padding: 10px 0 10px 10px
+                outline: none
+                font-size: 18px
+                width: 170px
+                height: 69px
+
+                ::placeholder
+                    font-size: 18px
+            .is-active
+                display: flex
+                justify-content: start
+                height: auto
+                width: 667px
+                .input-container
+                    display: flex
+                    justify-content: space-between
+                    width: 100%
+                    input
+                        padding: 0 15px
+                .list-container
+                    display: flex
+                    justify-content: space-between
+                    padding: 0 15px
+                    ul
+                        width: 33%
+                        padding: 0 15px 15px 15px
+                        li
+                            color: white
+                            font-size: 18px
+                            list-style: none
+                            margin: auto
+        .card-container
+
+            display: grid
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+            grid-gap: 50px
+            justify-content: space-between
+            .card
+                width: 380px
+                height: 364px
+                background-color: #e7e7e7
+                overflow: hidden
+                flex-wrap: wrap
+                border-radius: 5px
+
+                img
+                    outline: none
+                .card-img
+                    height: 178px
+                    width: 100%
+                    background: #C7BEBE
+                    outline: none
+                .card-details
+                    max-height: 166px
+                    padding: 0 20px
+                    .card-details-title-time
+                        display: flex
+                        justify-content: space-between
+                        margin: 20px 0
+                        .card-details-title-time *
+                            font-size: 18px
+                        .card-timer
+                            display: flex
+                            align-items: center
+                            img
+                                width: 18px
+                            .card-timer-numbers
+                                margin: 0 7px
+                .card-details-cooking
+                    display: flex
+                    width: 100%
+                    .card-ingredients
+                        display: flex
+                        width: 50%
+                        .ingredient
+                            display: flex
+                            font-size: 12px
+                .card-instruction
+                    display: flex
+                    flex-wrap: wrap
+                    max-height: 109px
+                    width: 50%
+                    font-size: 12px
+                    overflow: hidden
+                    p
+                        width: 100%
+                        overflow-wrap: break-word
+            .card:hover
+                transform: scale(1.02)
+                -webkit-box-shadow: 0px 1px 15px 3px rgba(0,0,0,0.3)
+                box-shadow: 0px 1px 15px 3px rgba(0,0,0,0.3)
+                transition-duration: 0.6s
+                cursor: pointer
